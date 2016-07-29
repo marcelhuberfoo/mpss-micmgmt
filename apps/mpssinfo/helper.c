@@ -41,7 +41,7 @@
 
 char *progname = NULL;
 #ifdef __linux__
-inline void error_msg_start(char *format, ...)
+void error_msg_start(char *format, ...)
 {
     va_list args;
 
@@ -51,7 +51,7 @@ inline void error_msg_start(char *format, ...)
     va_end(args);
 }
 
-inline void error_msg_cont(char *format, ...)
+void error_msg_cont(char *format, ...)
 {
     va_list args;
 
@@ -60,7 +60,7 @@ inline void error_msg_cont(char *format, ...)
     va_end(args);
 }
 
-inline void log_msg_start(char *format, ...)
+void log_msg_start(char *format, ...)
 {
     va_list args;
 

@@ -41,9 +41,9 @@
 
 extern char *progname;
 #ifdef __linux__
-inline void error_msg_start(char *, ...);
-inline void error_msg_cont(char *, ...);
-inline void log_msg_start(char *, ...);
+void error_msg_start(char *, ...);
+void error_msg_cont(char *, ...);
+void log_msg_start(char *, ...);
 #else
 #ifdef WINDOWS
 //inline methods with var_args is not allowed in windows
