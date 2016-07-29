@@ -106,8 +106,8 @@ int read_flash_device_maint_mode(struct mic_device *, void **, size_t *);
 
 int check_smc_bootloader_image(char*, int);
 
-inline void error_msg_start(char *, ...);
-inline void error_msg_cont(char *, ...);
+void error_msg_start(char *, ...);
+void error_msg_cont(char *, ...);
 
 #define MAINT_MODE_POLL_INTERVAL      (1)       /* seconds */
 #define READY_MODE_POLL_INTERVAL      (1)       /* seconds */

@@ -1719,7 +1719,7 @@ free_scanned:
     return ret;
 }
 
-inline void error_msg_start(char *
+void error_msg_start(char *
                             format,
                             ...)
 {
@@ -1746,7 +1746,7 @@ inline void error_msg_start(char *
     va_end(args);
 }
 
-inline void error_msg_cont(char *
+void error_msg_cont(char *
                            format,
                            ...)
 {
