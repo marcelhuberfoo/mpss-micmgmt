@@ -1999,11 +1999,11 @@ static void common_options_help(void)
 static int do_help_cmd(build_cmd_func *build_func, setup_cmd_func *setup_func,
                        done_cmd_func *done_func, init_cmd_func *init_func)
 {
-    ARG_USED(build_func);
-    ARG_USED(setup_func);
-    ARG_USED(done_func);
-    ARG_USED(init_func);
-    
+	ARG_USED(build_func);
+	ARG_USED(setup_func);
+	ARG_USED(done_func);
+	ARG_USED(init_func);
+
 	printf("%s\n\n", MIC_COPYRIGHT);
 
     if (nodowngrade || silent || device_arg || noreboot || image_path ||
